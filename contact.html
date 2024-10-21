@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS dosyası bağlantısı -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap" rel="stylesheet">
+
+
+    <style>
+        /* Genel stil ayarları */
+        body {
+            font-family: Lora, serif;
+            background-color: #ffebee;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+            font-size: 18px;
+            /* Genel yazı boyutunu büyüttük */
+        }
+
+        h1 {
+            text-align: center;
+            color: #d81b60;
+            font-size: 36px;
+            /* Başlık boyutunu büyüttük */
+            margin-bottom: 30px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 30px 0;
+            gap: 20px;
+            /* Bağlantılar arasındaki boşluk */
+        }
+
+        a {
+            text-decoration: none;
+            background-color: #f8bbd0;
+            color: #d81b60;
+            padding: 15px 25px;
+            /* Bağlantıların iç boşluklarını artırdık */
+            border-radius: 10px;
+            /* Kenarları daha fazla yuvarlattık */
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            /* Simge ile metin arasındaki boşluk */
+            transition: background-color 0.3s;
+            font-size: 20px;
+            /* Bağlantı metninin boyutunu artırdık */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Hafif gölgelendirme */
+        }
+
+        header {
+            background-color: #e97fa6;
+            /* Header color */
+            padding: 10px 20px;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            /* Shadow for the header */
+            position: relative;
+            /* Relative positioning for overlay */
+            z-index: 10;
+            /* Ensure header is above the image */
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .logo h2 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav_links {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav_links li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav_links li a:hover {
+            color: #ffebee;
+            /* Text color on hover */
+        }
+
+
+        a:hover {
+            background-color: #d81b60;
+            color: white;
+        }
+
+        .contact-links img {
+            width: 30px;
+            /* Simge genişliğini artırdık */
+            height: 20px;
+            /* Simge yüksekliğini artırdık */
+        }
+
+        .container {
+            max-width: 800px;
+            /* İçeriğin genişliğini artırdık */
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            /* Kenarları daha yuvarlak yaptık */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            /* Daha belirgin gölgelendirme */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h2><a href="#">Gizem Toma</a></h2>
+            </div>
+            <ul class="nav_links">
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="survey.html">Survey</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h1>CONTACT</h1>
+        <div class="contact-links">
+            <a href="https://www.instagram.com/gizem_toma" target="_blank">
+                <img src="insta.jpg" alt="Instagram">
+                My Instagram Account
+            </a>
+            <a href="mailto:gizemtoma5@gmail.com">
+                <img src="maillogo.jpg" alt="Email">
+                Send me an e-mail
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
